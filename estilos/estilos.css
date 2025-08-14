@@ -1,57 +1,94 @@
 body {
-    background: linear-gradient(135deg, #8400ff, #8400ff); 
-    font-family: Arial, sans-serif;
-    height: 100vh;
-    margin: 0;
-}
-
-
-body {
-    background: linear-gradient(135deg, #8400ff, #8400ff); 
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;  
-    color: #333;
-}
-
-.contenedor {
-    text-align: center;
+  background-color: #ffffff; /* Color de fondo */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    font-size: 2em;
-    color: rgb(0, 0, 0);
-    margin-bottom: 20px;
+  color: #333;
+  margin-top: 20px;
 }
 
-
-.calculadora {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 260px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+.productos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 30px;
 }
 
+.producto {
+  background: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 200px;
+  border-radius: 8px;
+}
 
-.calculadora button {
-    font-size: 1.5em;
-    padding: 20px;
-    background-color: #f0f0f0;
+.producto img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.resumen {
+  margin: 30px 0;
+}
+
+#mensaje {
+  font-weight: bold;
+  margin-top: 20px;
+}
+.producto {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+.grafica2 {
+  background-image: url("assets/img/grafica2.png");
+}
+
+.grafica3 {
+  background-image: url("assets/img/grafica3.png");
+}
+
+.rtx2060 {
+  background-image: url("assets/img/rtx2060.jpg");
+}
+#btn-comprar-producto {
+    display: inline-block;
+    margin-top: 20px;   /* separación con lo de arriba */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffc107;  /* amarillo tipo Bootstrap warning */
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-.calculadora button:hover {
-    background-color: #ddd;
+#btn-comprar-producto:hover {
+    background-color: #e0a800;
 }
-
